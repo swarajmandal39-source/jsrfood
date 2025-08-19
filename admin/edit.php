@@ -1,19 +1,19 @@
 <?php include 'db.php';
 
 $id = $_GET['id'];
-$product = $conn->query("SELECT * FROM products WHERE id=$id")->fetch_assoc();
+$product = $conn->query("SELECT * FROM menu WHERE id=$id")->fetch_assoc();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = $_POST['name'];
+    $name_jsr = $_POST['namee'];
     $desc = $_POST['description'];
     $price = $_POST['price'];
 
     if (!empty($_FILES['image']['name'])) {
         $img = $_FILES['image']['name'];
         move_uploaded_file($_FILES['image']['tmp_name'], "uploads/$img");
-        $conn->query("UPDATE products SET name='$name', description='$desc', price='$price', image='$img' WHERE id=$id");
+        $conn->query("UPDATE menu SET name='$name_jsr', description='$desc', price='$price', image='$img' WHERE id=$id");
     } else {
-        $conn->query("UPDATE products SET name='$name', description='$desc', price='$price' WHERE id=$id");
+        $conn->query("UPDATE menu SET name='$name', description='$desc', price='$price' WHERE id=$id");
     }
     header("Location: index.php");
 }
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <form method="POST" enctype="multipart/form-data">
         <div class="mb-3">
             <label>Name</label>
-            <input type="text" name="name" class="form-control" value="<?= $product['name'] ?>" required>
+            <input type="text" name="namee" class="form-control" value="<?= $product['name'] ?>" required>
         </div>
         <div class="mb-3">
             <label>Description</label>
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="mb-3">
             <label>Current Image:</label><br>
-            <img src="uploads/<?= $product['image'] ?>" width="100"><br><br>
+            <img src="uploads/<?= $product['img'] ?>" width="100"><br><br>
             <label>Change Image</label>
             <input type="file" name="image" class="form-control">
         </div>
