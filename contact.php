@@ -45,7 +45,7 @@ if(isset($_POST['submit'])){
     /* Header */
     header {
       background: #f43b00;
-      padding: 20px;
+      padding: 21px;
       color: white;
       text-align: center;
     }
