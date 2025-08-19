@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General body styling */
+  body {
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container holds nav */
+  .container {
+    background-color: rgba(0, 120, 212, 0.8);
+    color: aliceblue;
+  }
+  
+  /* Navigation bar styling */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0px 4px 7px 4px rgb(250, 247, 247);
+  }
+  
+  /* Logo styling */
+  nav img {
+    height: 50px;
+  }
+  
+  /* Navigation links */
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  nav ul a:hover {
+    border-bottom: 2px solid red;
+    font-weight: 600;
+    color: antiquewhite;
+  }
+  
+  /* Hero section box */
+  .box {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url('main-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    opacity: 0.9;
+    height: 40rem;
+  }
+  
+  /* Main heading */
+  .main-box {
+    font-size: 6rem;
+    font-family: "Great Vibes", "Merienda One", sans-serif;
+    color: #c59d5f;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheading */
+  .menu-box {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+  }
+  
+  /* Cutlery icon */
+  .box img {
+    margin-top: 20px;
+    width: 2rem;
+  }
+  
+
+  
+  
+  /* Main heading */
+  .main-box {
+    font-size: 6rem;
+    font-family: "Great Vibes", "Merienda One", sans-serif;
+    color: #c59d5f;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheading */
+  .menu-box {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+  }
+  
+  /* Cutlery icon */
+  .box img {
+    margin-top: 20px;
+    width: 2rem;
+  }
+  
+  
+  .section-heading {
+    text-align: center;
+    margin-top: 8rem;
+  }
+  
+  .section-check {
+    text-transform: none;
+    color: #c59d5f;
+    font-size: 3rem;
+  }
+  
+  .about-section {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .dishes {
+    display: flex;
+  
+    margin-top: 50px;
+   margin-inline: 9rem;
+  }
+  
+  .stock {
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid;
+    width: 25rem;
+    height: 30rem;
+  }
+  
+  .stock img {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 20px;
+  }
+  
+  .s-name {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  .s-subject {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .s-detail {
+    margin-top: 10px;
+    line-height: 20px;
+   font-size: 20px;
+  }
+  
+  .stock-2 {
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid;
+    width: 25rem;
+    height: 30rem;
+   
+  }
+  .stock-2 img{
+     width: 20rem;
+    height: 20rem;
+    margin-top: 20px;
+  
+  }
+  .s-name-2{
+    margin-top: 20px;
+    font-size: 25px;
+  
+  }
+  .s-subject-2{
+   margin-top: 10px;
+    font-size: 20px;
+  }
+  .s-detail-2{
+  margin-top: 10px;
+    line-height: 20px;
+   font-size: 20px;
+  }
+  
+  .stock-3 {
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid;
+    width: 25rem;
+    height: 30rem;
+  }
+  .stock-3 img{
+     width: 20rem;
+    height: 20rem;
+    margin-top: 20px;
+  }
+  .s-name-3{
+    margin-top: 20px;
+     font-size: 25px;
+  }
+  .s-subject-3{
+    margin-top: 10px;
+    font-size: 20px;
+  
+  }
+  .s-detail-3{
+  margin-top: 10px;
+    line-height: 20px;
+   font-size: 20px;
+  }
+  .sec-head{
+    display: flex;
+ margin-inline: 9rem;
+    margin-top: 20px;
+   
+  }
+  .notice-board {
+    background-image: url('main-courses.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin-top: 15%;
+    height: 35rem;
+    
+}
+.deal{
+    font-size: 3rem;
+    margin-top: 18rem;
+    text-transform: uppercase;
+    color: #c59d5f;
+}
+.style{
+    text-transform: uppercase;
+    font-size: 3rem;
+    
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    
+}
+
+.menu-column {
+    width: 500px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: background 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #f0e0c8;
+}
+
+.menu-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.menu-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 6rem;
+}
+
+.menu-text h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.menu-text p {
+    margin: 0;
+    font-size: 1.0rem;
+    font-style: italic;
+    color: gray;
+}
+
+.price {
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 1.3rem;
+}
+.cofee-board {
+    background-image: url('dessertcoffee.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin-top: 15%;
+    height: 35rem;
+    
+}
+.app-info {
+    display: flex;
+    gap: 10rem;
+    margin: 0PX;
+    margin-top: 30px;
+  
+  
+  }
+  
+.mailtitle {
+
+
+    color: #f43b00;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .mailbox {
+    margin: 15px;
+    font-family: Staatliches, sans-serif;
+    text-transform: uppercase;
+    color: #f43b00;
+    line-height: 1.11em;
+  }
+  
+  .footertitle {
+    display: flex;
+    gap: 10rem;
+  
+    overflow: hidden;
+  
+  }
+  
+  .contacttitle {
+    text-transform: uppercase;
+    margin: 15px;
+    color: #f43b00;
+  }
+  
+  .subcontact {
+    color: #f43b00;
+  }
+  
+  .subcontactdetail {
+    margin-top: 30px;
+  }
+  
+  .contactinfo {
+    text-transform: uppercase;
+    margin: 15px;
+  }
+  
+  .submailtitle {
+    margin: 5px;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 10px;
+  
+  }
+  
+  .submaildetail {
+    margin-top: 30px;
+  }
+  
+  .subinfodetail {
+    margin-top: 30px;
+    color: #f43b00;
+  }
+  
+  .subcontactinfo {
+    color: #f43b00;
+  }
+  
+  
+  .bottomtitle {
+    margin-top: 7rem;
+  
+  }
+  
+  footer img {
+    width: 26rem;
+    margin-top: 20px;
+  }
+  
+  .handleimg {
+    display: flex;
+    
+  }
+  
+  .icons {
+    margin-left: 15rem;
+    margin-top: 70px;
+    font-size: 30px;
+  }
+  
+  .underscore {
+    margin-left: 10px;
+    margin-top: 40px;
+    display: flex;
+    color: #f43b00;
+    font-size: 40px;
+  }
+  
+  .underword {
+    margin-left: 3rem;
+    margin-top: 45px;
+    color: #f43b00;
+    font-size: 20px;
+  
+  }

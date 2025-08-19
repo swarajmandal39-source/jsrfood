@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcello's Pizzeria - About Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fffaf6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header Section */
+    .about-body {
+      text-align: center;
+      font-size: 80px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #f43b00;
+      margin-top: 80px;
+    }
+
+    .body-detail {
+      text-align: center;
+      font-size: 24px;
+      margin: 20px auto;
+      max-width: 900px;
+      color: #444;
+    }
+
+    /* About Image */
+    .about-img {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .about-img img {
+      width: 80%;
+      max-width: 1000px;
+      border-radius: 15px;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Team Section */
+    .aboutsection {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 60px 100px;
+      background-color: #fff3ee;
+    }
+
+    .team-guide h6 {
+      font-size: 40px;
+      text-transform: uppercase;
+      color: #f43b00;
+      margin-bottom: 20px;
+    }
+
+    .team-guide img {
+      width: 120px;
+    }
+
+    .team {
+      max-width: 600px;
+    }
+
+    .team-heading {
+      font-size: 32px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .team-detail {
+      font-size: 18px;
+      color: #444;
+      line-height: 28px;
+    }
+
+    /* Team Members */
+    .team-info {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 80px 100px;
+    }
+
+    .quality-detail,
+    .team-quality {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .quality-detail img,
+    .team-quality img {
+      width: 280px;
+      height: 340px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    .master-name,
+    .master-quality {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .master-speci,
+    .master-detail {
+      font-size: 18px;
+      color: #777;
+    }
+
+    /* Cafe Section */
+    .cafe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      background: #fff3ee;
+      padding: 80px 100px;
+      border-radius: 30px;
+      margin: 50px auto;
+      max-width: 1200px;
+    }
+
+    .cafe-info img {
+      width: 500px;
+      height: 350px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .cafe-detail {
+      flex: 1;
+    }
+
+    .cafe-head {
+      text-transform: uppercase;
+      font-size: 45px;
+      color: #f43b00;
+      margin-bottom: 20px;
+    }
+
+    .cafe-word {
+      font-size: 22px;
+      margin-bottom: 40px;
+    }
+
+    .cafe-contact {
+      display: inline-block;
+      background: #f43b00;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .cafe-contact:hover {
+      background: #c72f00;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      text-align: center;
+      padding: 80px 100px;
+    }
+
+    .gallery h2 {
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      color: #f43b00;
+    }
+
+    .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-images img {
+      width: 100%;
+      height: 220px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    footer h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #f43b00;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- About Section -->
+  <div class="about-body">About Marcello</div>
+  <div class="body-detail">
+    Anywhere. Anytime. The best pizza in town for those special moments with friends & family. <br>
+    Marcello's Pizzeria - A family restaurant since 1998.
+  </div>
+
+  <div class="about-img">
+    <img src="about-1-png.png" alt="Pizza About Image">
+  </div>
+
+  <!-- Team Intro -->
+  <div class="aboutsection">
+    <div class="team-guide">
+      <h6>Meet Our Team</h6>
+      <img src="simple-red-arrow-illustration-png.webp" alt="">
+    </div>
+
+    <div class="team">
+      <h3 class="team-heading">Passionate Chefs & Friendly Staff</h3>
+      <p class="team-detail">
+        At Marcello’s, food is more than just a meal – it’s an experience. Our chefs bring authentic recipes and fresh
+        ingredients to the table, while our team ensures you always feel at home. <br><br>
+        From hand-stretched pizzas baked in a traditional stone oven to fresh pasta and desserts, every bite is crafted
+        with love and care.
+      </p>
+    </div>
+  </div>
+
+  <!-- Team Members -->
+  <div class="team-info">
+    <div class="quality-detail">
+      <img src="about-team-img-5.jpg" alt="">
+      <h3 class="master-name">Rick Lawson</h3>
+      <p class="master-speci">Pizza Master</p>
+    </div>
+
+    <div class="team-quality">
+      <img src="about-team-img-4.jpg" alt="">
+      <h3 class="master-quality">Cutie Pie</h3>
+      <p class="master-detail">Quality Inspector</p>
+    </div>
+  </div>
+
+  <!-- Cafe Section -->
+  <div class="cafe">
+    <div class="cafe-info">
+      <img src="istockphoto-816833592-612x612.jpg" alt="">
+    </div>
+    <div class="cafe-detail">
+      <h3 class="cafe-head">Who We Are</h3>
+      <p class="cafe-word">The best food place in town. Marcello’s is where passion meets flavor.</p>
+      <a href="contact.php" class="cafe-contact">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery-images">
+      <img src="food1.jpg" alt="">
+      <img src="food2.jpg" alt="">
+      <img src="food3.jpg" alt="">
+      <img src="food4.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Marcello’s Pizzeria</h3>
+    <p>© 2025 Marcello’s Pizzeria | Designed with ❤️ for food lovers</p>
+  </footer>
+
+</body>
+
+</html>

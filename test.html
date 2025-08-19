@@ -1,0 +1,54 @@
+<div class="heading">
+  <div class="divider dark mb-4">
+    <div class="icon-wrap">
+      <i class="icon icon-spoon"></i>
+    </div>
+  </div>
+</div>
+<style>
+    .heading .divider,
+.heading .divider.dark {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Icon font general styles */
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon' !important; /* Make sure icomoon is included */
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Divider lines before and after icon */
+.divider.dark .icon-wrap:before,
+.divider.dark .icon-wrap:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #000;
+  width: 120px;
+  height: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.divider.dark .icon-wrap:before {
+  left: 0;
+}
+
+.divider.dark .icon-wrap:after {
+  right: 0;
+}
+
+</style>
