@@ -5,6 +5,8 @@ $product = $conn->query("SELECT * FROM menu WHERE id=$id")->fetch_assoc();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name_jsr = $_POST['namee'];
+    // echo $name_jsr;
+    // exit;
     $desc = $_POST['description'];
     $price = $_POST['price'];
 
@@ -13,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         move_uploaded_file($_FILES['image']['tmp_name'], "uploads/$img");
         $conn->query("UPDATE menu SET name='$name_jsr', description='$desc', price='$price', image='$img' WHERE id=$id");
     } else {
-        $conn->query("UPDATE menu SET name='$name', description='$desc', price='$price' WHERE id=$id");
+        $conn->query("UPDATE menu SET name='$name_jsr', description='$desc', price='$price' WHERE id=$id");
     }
     header("Location: index.php");
 }

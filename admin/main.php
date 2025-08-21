@@ -53,15 +53,15 @@
         </thead>
         <tbody>
             <?php
-            $result = $conn->query("SELECT * FROM menu");
+            $result = $conn->query("SELECT * FROM main_course");
             while ($row = $result->fetch_assoc()):
             ?>
             <tr>
                 <td><?= $row['id']; ?></td>
                 <td><?= $row['name']; ?></td>
-                <td><?= $row['description']; ?></td>
+                <td><?= $row['des']; ?></td>
                 <td>₹<?= $row['price']; ?></td>
-                <td><img src="uploads/<?= $row['img']; ?>" width="60"></td>
+                <td><img src="uploads/<?= $row['image']; ?>" width="60"></td>
                 <td>
                     <a href="edit.php?id=<?= $row['id']; ?>" class="btn btn-sm btn-warning">Edit</a>
                     <a href="delete.php?id=<?= $row['id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Delete this product?')">Delete</a>
