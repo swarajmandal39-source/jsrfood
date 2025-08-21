@@ -23,7 +23,7 @@
                 <div class="logo">
                     <img src="marcello-header-logo.png" alt="">
                 </div>
-                <a href="menu.html">menu</a>
+                <a href="menu.php">menu</a>
                 <a href="reservation.html">reservation</a>
                 <a href="about.html">About</a>
                 <a href="contact.php">Contact</a>
